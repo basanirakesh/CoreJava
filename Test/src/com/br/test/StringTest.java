@@ -11,7 +11,10 @@ public class StringTest {
 		String string9 = new String("123");
 		String string10 = string1 + "";
 		String string11 = (string1 + string7).intern();
-		
+		String string12 = new String();
+		String string13 = null;
+		StringBuilder stringBuilder1 = new StringBuilder();
+
 		System.out.println(string1 == string2);
 		System.out.println("----------------------");
 		System.out.println(string1 == string3);
@@ -25,5 +28,38 @@ public class StringTest {
 		System.out.println(string3 == string9);
 		System.out.println("----------------------");
 		System.out.println(string1 == string10);
+		System.out.println("----------------------");
+
+		passString(string12);
+		System.out.println(string12);
+		System.out.println("----------------------");
+
+		passString(string13);
+		System.out.println(string13);
+		System.out.println("----------------------");
+
+		passString(stringBuilder1);
+		System.out.println(stringBuilder1.toString());
+	}
+
+	private static void passString(String string) {
+		fillString(string);
+	}
+
+	private static void fillString(String string) {
+		string = "rakesh";
+	}
+
+	private static void passString(StringBuilder string) {
+		fillString(string);
+	}
+
+	private static void fillString(StringBuilder string) {
+		string.append("rakesh");
+	}
+
+	private static void compareAndPrint(String string) {
+		String testString = "rakesh";
+		System.out.println("----------------------");
 	}
 }
