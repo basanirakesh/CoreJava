@@ -13,6 +13,7 @@ public class StringTest {
 		String string11 = (string1 + string7).intern();
 		String string12 = new String();
 		String string13 = null;
+		String string14 = "rakesh";
 		StringBuilder stringBuilder1 = new StringBuilder();
 
 		System.out.println(string1 == string2);
@@ -40,6 +41,8 @@ public class StringTest {
 
 		passString(stringBuilder1);
 		System.out.println(stringBuilder1.toString());
+		
+		compareAndPrint(string14);
 	}
 
 	private static void passString(String string) {
@@ -60,6 +63,7 @@ public class StringTest {
 
 	private static void compareAndPrint(String string) {
 		String testString = "rakesh";
-		System.out.println("----------------------");
+		System.out.println("-----------compareAndPrint-----------");
+		System.out.println(string == testString);
 	}
 }
