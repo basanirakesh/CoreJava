@@ -1,4 +1,4 @@
-package com.br.test;
+package com.br.random;
 
 public class StringTest {
 	public static void main(String[] args) {

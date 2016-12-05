@@ -1,4 +1,4 @@
-package com.br.test;
+package com.br.random;
 
 import java.util.HashMap;
 import java.util.Map;

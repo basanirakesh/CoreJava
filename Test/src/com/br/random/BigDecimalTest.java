@@ -1,4 +1,4 @@
-package com.br.test;
+package com.br.random;
 
 import java.math.BigDecimal;
 import java.text.DecimalFormat;

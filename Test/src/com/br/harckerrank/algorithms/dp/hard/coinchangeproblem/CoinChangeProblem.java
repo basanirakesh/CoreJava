@@ -1,4 +1,4 @@
-package com.br.test;
+package com.br.harckerrank.algorithms.dp.hard.coinchangeproblem;
 
 public class CoinChangeProblem {
 
