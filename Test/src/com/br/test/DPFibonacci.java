@@ -3,7 +3,7 @@ package com.br.test;
 import java.util.HashMap;
 import java.util.Map;
 
-public class Fibonacci {
+public class DPFibonacci {
 	private static int count = 0;
 	private static Map<Long, Long> set = new HashMap<>();
 
