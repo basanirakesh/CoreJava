@@ -56,6 +56,7 @@ public class InstallCert {
         String host;
         int port;
         char[] passphrase;
+        args = new String []{"stg.mm.avs.oneadp.com"};
         if ((args.length == 1) || (args.length == 2)) {
             String[] c = args[0].split(":");
             host = c[0];

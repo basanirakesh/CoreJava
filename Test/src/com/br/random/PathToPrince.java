@@ -20,15 +20,17 @@ public class PathToPrince {
 	public static void displayPathtoPrincess(int n, Character[][] input) {
 		Integer row = 0;
 		Integer column = 0;
+		boolean princessFound = false;
 		for (int i = 0; i < n; i++) {
 			for (int j = 0; j < n; j++) {
 				if (input[i][j] == 'p') {
 					row = i;
 					column = j;
+					princessFound = true;
 					break;
 				}
 			}
-			if (row > 0 || column > 0)
+			if (princessFound)
 				break;
 		}
 		for (int i = 0; i < n / 2; i++) {
